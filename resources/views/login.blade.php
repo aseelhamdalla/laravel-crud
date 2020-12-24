@@ -1,11 +1,9 @@
 @extends('layouts.master')
 
 @section('main')
-<div class="jumbotron ">
+<div class="jumbotron">
 
 <form action="/logintable" method="post"  enctype="multipart/form-data" >
- 
-
     <div class="form-group">
         <label for="exampleInputEmail1">Full Name</label>
         <input type="text" class="form-control" id="exampleInputEmail1" name="fullname" placeholder="Enter name">

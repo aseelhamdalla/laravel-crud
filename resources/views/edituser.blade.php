@@ -7,7 +7,7 @@ Edit Student
 
 @section('main')
 
-<form action="/update/{{$users->id}}" method="post">
+<form action="/update/{{$users->id}}" method="post" enctype="multipart/form-data">
   @csrf
 {{-- {{method_field('PUT')}} --}}
 {{-- @method("PUT") --}}
@@ -45,17 +45,13 @@ Edit Student
         <input type="text" class="form-control" id="exampleInputEmail1" name="address" placeholder="Enter mobile number"  value="{{$users->address}}">
         <div>{{$errors->first('address')}}</div>
      </div>
+     
      <div class="form-group">
       <label for="exampleInputEmail1">image</label>
       <input type="file" class="form-control" id="exampleInputEmail1" name="image" >
       <div>{{$errors->first('image')}}</div>
    </div>
 
-   <div class="form-group">
-      <label for="exampleInputPassword1">Role</label>
-      <input  type="text" class="form-control" name="role" placeholder="role">
-      <div>{{$errors->first('role')}}</div>
-    </div>
     <button type="submit" name="submit" class="btn btn-primary">Update</button>
    
 

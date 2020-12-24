@@ -5,7 +5,8 @@
 @endsection 
 
 @section('main')
-<div class="jumbotron">
+
+<div class="jumbotron ">
 <form action="/customertable" method="post"  enctype="multipart/form-data" >
     <div class="form-group">
         <label for="exampleInputEmail1">NationalID</label>

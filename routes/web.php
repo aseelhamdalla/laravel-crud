@@ -12,15 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('welcome');});
+//routs for registration and show data in table 
 Route::get('/register','CustomerController@show');
 Route::post('/customertable','CustomerController@insert');
 Route::get('/table','CustomerController@list');
 
-
-
-
+//routs for registration and show data in table 
 Route::get('/customertable','CustomerController@list');/// the old was put 
 Route::get('/edituser/{id}','CustomerController@edit');
 Route::post('/update/{id}','CustomerController@update');
@@ -29,11 +27,11 @@ Route::post('/update/{id}','CustomerController@update');
 Route::get('/deleteuser/{id}','CustomerController@delete');
 
 
+Route::get('/admin','CustomerController@show2');
+Route::post('/logintable','CustomerController@insert2');
 
 
-Route::get('/login','CustomerController@show2');
-Route::post('/logintable','CustomerController@list2');
-// Route::get('/table','CustomerController@list2');
+
 
 Route::get('/grid','CustomerController@show3');
 Route::get('trainee/{id}','CustomerController@trainee');

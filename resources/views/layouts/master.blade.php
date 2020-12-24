@@ -29,7 +29,7 @@
           <ul class="nav navbar-nav">
             <li><a href="http://127.0.0.1:8000/customertable">Student table</a></li>
             <li><a href="http://127.0.0.1:8000/grid">Grid</a></li>
-            <li><a href="http://127.0.0.1:8000/login">Login</a></li>
+            <li><a href="http://127.0.0.1:8000/admin">Login</a></li>
           </ul>
         </div>
       </nav>
@@ -40,23 +40,7 @@
     <div class="container">
     @yield('main')
     </div>
-    <!--- Footer --->
-    {{-- <div class="container "> --}}
-    <div class="card text-center mt-2">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
-      </div>
-    {{-- </div> --}}
-    <!--# Footer #-->
+  
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
